@@ -18,11 +18,11 @@ import datetime
 import time
 import os
 import sys
-try:
-	from config import *
-except:
-	reconPath = "/usr/share/recon-ng/"
-	altDnsPath = "/root/domained/bin/sublst/"
+#try:
+#	from config import *
+#except:
+reconPath = "/usr/share/recon-ng/"
+altDnsPath = "/root/domained/bin/sublst/"
 
 sys.path.insert(0,reconPath)
 from recon.core import base
