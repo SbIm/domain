@@ -105,4 +105,4 @@ if args.runAltDns:
 	output = os.path.join(os.getcwd(),workspace+"_output.txt")
 	print "running alt-dns... please be patient :) results will be displayed in "+output
 	# python altdns.py -i subdomainsList -o data_output -w permutationsList -r -s results_output.txt
-	os.system('%s -i %s -w %s -r -s %s' % (altCmd, subdomains, permList,output))
+	os.system('%s -i %s -o altdns_data_output -w %s -r -s %s' % (altCmd, subdomains, permList,output))
