@@ -99,7 +99,7 @@ run_recon(domainList, bruteforceList)
 
 if args.runAltDns:
 	workspace = domainList[0]
-	altCmd="python "+os.path.join(altDnsPath,"altdns.py")
+	altCmd="altdns"
 	subdomains = os.path.join(os.getcwd(), workspace+".lst")
 	permList = args.permlist.name if args.permlist else os.path.join(altDnsPath,"words.txt")
 	output = os.path.join(os.getcwd(),workspace+"_output.txt")
