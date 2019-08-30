@@ -22,7 +22,7 @@ try:
 	from config import *
 except:
 	reconPath = "/usr/share/recon-ng/"
-	altDnsPath = "/root/Desktop/altdns-master/"
+	altDnsPath = "/root/domained/bin/sublst/"
 
 sys.path.insert(0,reconPath)
 from recon.core import base
@@ -101,7 +101,7 @@ if args.runAltDns:
 	workspace = domainList[0]
 	altCmd="altdns"
 	subdomains = os.path.join(os.getcwd(), workspace+".lst")
-	permList = args.permlist.name if args.permlist else os.path.join(altDnsPath,"words.txt")
+	permList = args.permlist.name if args.permlist else os.path.join(altDnsPath,"sl-domains.txt")
 	output = os.path.join(os.getcwd(),workspace+"_output.txt")
 	print "running alt-dns... please be patient :) results will be displayed in "+output
 	# python altdns.py -i subdomainsList -o data_output -w permutationsList -r -s results_output.txt
